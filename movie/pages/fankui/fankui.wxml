@@ -1,0 +1,2 @@
+<!--pages/fankui/fankui.wxml-->
+<button open-type ="feedback" >用户反馈</button>

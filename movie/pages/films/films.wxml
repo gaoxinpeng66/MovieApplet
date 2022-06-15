@@ -1,0 +1,48 @@
+<view class="tabList">
+
+  <view class="tab-btns">
+    <view class="{{index == active?'tab-btns-item btncur':'tab-btns-item'}}" wx:for="{{['热映','待映']}}" wx:key="id"
+      data-index="{{index}}" bindtap="change">{{item}}</view>
+  </view>
+
+  <view class="tab-cons">
+    <view data-index="0" class="{{0 == active?'tab-cons-item current':'tab-cons-item'}}">
+      <view class="tab-cons-item-box" bindtap="geDetail" data-item="{{item}}" wx:for="{{list}}" wx:key="index">
+        <image src="{{item.img}}" class="tab-cons-item-left" />
+        <view class="tab-cons-item-right">
+          <text class="tab-cons-item-name namecur">{{item.nm}}</text>
+          <text class="tab-cons-item-name">评分：{{item.sc}}</text>
+          <text class="tab-cons-item-name">主演：{{item.star}}</text>
+          <text class="tab-cons-item-name cur">{{item.showInfo}}</text>
+        </view>
+        <view class="tab-cons-item-btn">
+          <view>购票</view>
+        </view>
+      </view>
+    </view>
+
+    <view data-index="1" class="{{1 == active?'tab-cons-item current':'tab-cons-item'}}">
+      <view class="tab-cons-item-box" bindtap="geDetail" data-item="{{item}}" wx:for="{{list}}" wx:key="index">
+        <image src="{{item.img}}" class="tab-cons-item-left" />
+        <view class="tab-cons-item-right">
+          <text class="tab-cons-item-name namecur">{{item.nm}}</text>
+          <text class="tab-cons-item-name">200人想看</text>
+          <text class="tab-cons-item-name">类型：{{item.genres}}</text>
+          <text class="tab-cons-item-name">主演：{{item.star}}</text>
+        </view>
+
+        <view class="tab-cons-item-btn">
+          <view wx:if="{{item.state == 'soon'}}" class="curstate">预售</view>
+          <view wx:else="{{item.state == 'coming'}}" class="wantstate">想看</view>
+        </view>
+      </view>
+    </view>
+
+  </view>
+
+
+  <view class="loading">
+    <view wx:if="{{loading}}">加载中...</view>
+    <view wx:else="">已经到底了...</view>
+  </view>
+</view>

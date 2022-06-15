@@ -1,0 +1,25 @@
+<view class="search-box">
+  <view class="search-inp">
+    <input class="search-cont" placeholder="请输入电影名称" bindinput="onInput" />
+  </view>
+  <view class="search-btn" bindtap="goSearch">查询</view>
+</view>
+
+<view class="results">
+  <view wx:if="{{list&&list.length > 0}}">
+    <navigator class="item" wx:for="{{list}}" wx:key="index"
+      url="/pages/details/details?id={{item._id}}&index={{index}}">
+      <image src="{{item.img}}" />
+      <view class="info">
+        <text class="cur">{{item.nm}}</text>
+        <text>类型：{{item.genres}}</text>
+        <text>主演：{{item.star}}</text>
+        <text>{{item.credaTime}}中国大陆上映</text>
+      </view>
+      <!-- <view class="btn">
+      <button>购票</button>
+    </view> -->
+    </navigator>
+  </view>
+  <view wx:if="{{!list||list.length == 0}}" class="noCont">空空如也 ~</view>
+</view>

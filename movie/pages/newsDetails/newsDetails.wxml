@@ -1,0 +1,23 @@
+<wxs module="public" src="../../wxs/public.wxs"></wxs>
+<view class="detail">
+    <view class="title">{{list.title}}</view>
+    <view class="info">
+      <view class="row">{{list.author}}</view>  
+      <view class="row">{{public.dateFormat(list.createTime)}}</view> 
+    </view>
+    <view style="width:100%;">
+      <video style="width:100%" src="{{list.resources}}" poster="{{list.show}}"  wx:if="{{list.nature== '0'}}"></video>
+      <image mode="aspectFit" style="width:100%;" src="{{list.resources}}" wx:if="{{list.nature== '1'}}"></image>
+    </view>
+    <rich-text class="content" nodes="{{list.wenben}}"></rich-text>
+
+    <view class="recommend {{list.onlike?'active':''}}" bindtap="clickLike">
+      <view class="icon">点赞</view>
+      <view class="num">{{list.praise}}</view>
+    </view>
+
+</view>
+
+
+
+

@@ -1,0 +1,36 @@
+/* pages/bangzhu/bangzhu.wxss */
+.titleImg{
+  display: flex;
+  
+}
+.titleImg image{
+  width: 120rpx;
+  height: 120rpx;
+  margin: 35rpx;
+}
+.titleImg .font{
+  font-size: 38rpx;
+  margin-top: 65rpx;
+}
+/*绿色的横线*/
+.lineYellow{
+  background-color: #f1b100;
+  height: 12rpx;
+  width: 80%;
+  margin-left:50rpx;
+}
+/*您可能遇到的问题全部的位置样式*/
+.content{
+  width: 87%;
+  margin: 0 auto;
+}
+/*您可能遇到的问题的样式*/
+.content .title{
+  font-size: 36rpx;
+  margin-top: 15rpx;
+}
+/*......的样式*/
+.content .font{
+  font-size: 28rpx;
+  color: gray;
+}

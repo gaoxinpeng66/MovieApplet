@@ -1,0 +1,27 @@
+/* pages/kefu/kefu.wxss */
+.modalcnt1{
+ 
+  height: 150rpx;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 220rpx;
+
+}
+
+.modalcnt2{
+ 
+  height: 150rpx;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 20rpx;
+
+}
+
+.modalcnt3{
+ 
+  height: 150rpx;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 20rpx;
+
+}

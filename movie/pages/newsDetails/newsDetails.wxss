@@ -1,0 +1,28 @@
+.detail{ padding:50rpx 30rpx}
+.detail .title{ font-size: 38rpx;  line-height: 1.5em; padding-bottom:20rpx;}
+.detail .content{ font-size: 35rpx; color:#333; line-height: 1.8em; }
+.detail .info{ padding-right:50rpx 0rpx; font-size: 25rpx; color:#666; }
+.row{line-height: 2em;}
+
+.recommend{
+  width: 200rpx;
+  height: 200rpx;
+  border:3rpx solid #ccc;
+  border-radius: 50%;
+  margin: 100rpx auto 50rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color:#ccc;
+}
+.recommend .icon{ font-size: 66rpx;}
+.recommend .num{ font-size: 32rpx; padding-top:5rpx;}
+.recommend.active{ color:#fff; background:#07C160; border:none}
+
+.userinfo{display: flex; flex-direction: column; justify-content: center; align-items: center; padding-bottom:100rpx; }
+.picgroup{ padding-left:50rpx;}
+.picgroup image{ width: 80rpx; height: 80rpx; border-radius: 50%; 
+  border:6rpx solid #fff; margin-left: -50rpx;
+}
+.userinfo .text{ color:#666; font-size: 30rpx; padding-bottom:20rpx}

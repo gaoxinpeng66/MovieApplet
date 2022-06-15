@@ -1,0 +1,64 @@
+<view class="home">
+  <!-- 用户信息 -->
+  <view class="user-info" bindtap="clickLike">
+    <image class="avatar" src="{{userInfo?userInfo.avatarUrl:''}}"></image>
+    <view class="info">
+      <text class="name">{{userInfo?userInfo.nickName:'点击登陆'}}</text>
+    </view>
+  </view>
+
+  <!-- 第一排 -->
+  <view class="box">
+    <view class="item">
+      <view class="cont" bindtap="geMovieOrder">
+        <image src="/images/dingDan.png" class="img"></image>
+        <text class="txt">订单</text>
+      </view>
+    </view>
+
+    <view class="item" bindtap="geMovieCollection">
+      <view class="cont">
+        <image src="/images/xiangKan.png" class="img"></image>
+        <text class="txt">想看</text>
+      </view>
+    </view>
+
+    <view class="item"  bindtap="geNewsLikes">
+      <view class="cont">
+        <image src="/images/dianZan.png" class="img"></image>
+        <text class="txt">点赞</text>
+      </view>
+    </view>
+  </view>
+
+
+  <!-- 第二排 -->
+  <view class="box">
+    <view class="item" bindtap="gekefu">
+      <view class="cont">
+        <image src="/images/kefu.png" class="img"></image>
+        <text class="txt">在线客服</text>
+      </view>
+    </view>
+    <view class="item" bindtap="gebangzhu">
+      <view class="cont">
+        <image src="/images/bangzhu.png" class="img"></image>
+        <text class="txt">帮助中心</text>
+      </view>
+    </view>
+    <view class="item" bindtap="gefankui">
+      <view class="cont">
+        <image src="/images/yijianfankui.png" class="img"></image>
+        <text class="txt">用户反馈</text>
+        
+      </view>
+    </view>
+
+    <view class="item" bindtap="geguanyuwomen">
+      <view class="cont">
+        <image src="/images/guanyuwomen.png" class="img"></image>
+        <text class="txt">关于我们</text>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,95 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/home/home",
+          "pathName": "pages/home/home",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/films/films",
+          "pathName": "pages/films/films",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/news/news",
+          "pathName": "pages/news/news",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/newsDetails/newsDetails",
+          "pathName": "pages/newsDetails/newsDetails",
+          "query": "id=887b93",
+          "scene": null
+        },
+        {
+          "name": "pages/home/home",
+          "pathName": "pages/home/home",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/search/search",
+          "pathName": "pages/search/search",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/movieOrder/movieOrder",
+          "pathName": "pages/movieOrder/movieOrder",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/newsLikes/newsLikes",
+          "pathName": "pages/newsLikes/newsLikes",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/details/details",
+          "pathName": "pages/details/details",
+          "query": "_id=807102f662416d3e025df4ae7d9c02a1",
+          "scene": null
+        },
+        {
+          "name": "pages/details/details",
+          "pathName": "pages/details/details",
+          "query": "_id='807102f662416d3e025df4ae7d9c02a1'",
+          "scene": null
+        },
+        {
+          "name": "pages/details/details",
+          "pathName": "pages/details/details",
+          "query": "id=807102f662416d3e025df4ae7d9c02a1",
+          "scene": null
+        },
+        {
+          "name": "pages/movieCollection/movieCollection",
+          "pathName": "pages/movieCollection/movieCollection",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/movieOrder/movieOrder",
+          "pathName": "pages/movieOrder/movieOrder",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,16 @@
+<!--pages/kefu/kefu.wxml-->
+
+<view class="modalcnt1">
+  <button type="primary" bindtap="modalcnt1">人工客服</button>
+</view>  
+
+<view class="modalcnt2">
+  <button type="primary" bindtap="modalcnt2">IR客服</button>
+</view>  
+       
+<View class="modalcnt3">
+    <button type="primary" bindtap="modalcnt3">热线电话</button>  
+</View>
+
+
+

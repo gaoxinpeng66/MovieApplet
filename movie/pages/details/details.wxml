@@ -1,0 +1,65 @@
+<view class="box-header">
+  <image src="{{list.img}}" class="item-img"></image>
+  <view class="item-right">
+    <view class="item-info">
+      <view class="item-name namecur">
+        {{list.nm}}
+        <text>IMAX {{list.version}}</text>
+      </view>
+      <view class="item-cont">{{list.genres}}</view>
+      <!-- <view class="item-cont">{{list.star}}</view> -->
+      <view class="item-cont">{{list.credaTime}}中国大陆上映</view>
+    </view>
+    <view class="item-floot">
+      <view class="item-btn" bindtap="clickSee">
+        <image src="{{list.onSee?'/images/look-yes.png':'/images/look-no.png'}}"></image>
+        <view>{{list.onSee?'已想看':'想看'}}</view>
+      </view>
+      <view class="item-btn">
+        <image src="/images/look-no.png"></image>
+        <view>分享</view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="sc">
+  <view class="sc-box">
+    <view class="sc-item">
+      <text>评分</text>
+      <text class="cursc">{{list.sc}}</text>
+    </view>
+    <view class="sc-item">
+      <text class="cursc">{{list.seeNum}}</text>
+      <text>人想看</text>
+    </view>
+  </view>
+</view>
+
+<view class="summary-box">
+  <view class="summary-header">
+    <view class="header-left">简介</view>
+    <view class='header-right' bindtap="change">
+      <text class="ico_text">{{if_hide?'全部':'收起'}}</text>
+      <image class='ico_img' src="{{if_hide?'/images/zhankai.png':'/images/shouqi.png'}}"></image>
+    </view>
+  </view>
+  <view class="{{ if_hide ? 'summary-info':'summary-info currSummary'}}">{{list.summary}}</view>
+</view>
+
+<view class="stills-box">
+  <view class="stills-header">剧照</view>
+  <scroll-view scroll-x="true">
+    <view class="stills-scroll">
+      <view class="stills-item" wx:for="{{list.stills}}" wx:key="index">
+        <image class="item-img" src="{{item}}" />
+      </view>
+    </view>
+  </scroll-view>
+</view>
+
+<view class="noYong"></view>
+
+<view class="floot-box" wx:if="{{list.state != 'coming' }}" bindtap="clickBuy">
+  <view class="{{list.onBuy? 'btn btnCur':'btn'}}">{{list.onBuy?'已购买':'特惠购票'}}</view>
+</view>

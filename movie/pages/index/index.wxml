@@ -1,0 +1,75 @@
+<!-- 搜索 -->
+<view class="search-box">
+  <view class="search-inp" bindtap="geSearch">
+    <icon class="search-icon" type="search" color="#999" size="16"></icon>
+    <text class="search-text">新蝙蝠侠</text>
+  </view>
+</view>
+
+<!-- 轮播图 -->
+<block>
+  <swiper class="swiper-box" indicator-dots autoplay circular interval="5000" indicator-active-color="#fff"
+    indicator-color="#999" previous-margin="20rpx" next-margin="20rpx">
+    <swiper-item wx:for="{{Swipslist}}"  wx:key="index">
+        <image src="{{item.stills[0]}}" bindtap="geDetail" data-item="{{item}}" class="swiper-img"></image>
+    </swiper-item> 
+  </swiper>
+</block>
+
+<!-- 主体 -->
+<block>
+  <!-- 正在热映 -->
+  <view class="movie-box">
+    <view class="movie-title"  >
+      <text class="movie-title-left">正在热映</text>
+      <view class="movie-title-right" data-index="0" bindtap="geMovieList">查看全部<text class="teshu"> > </text>
+      </view>
+    </view>
+
+    <scroll-view scroll-x="true" >
+      <view class="movie-scroll">
+        <view class="movie-item"  wx:for="{{hotList}}" wx:key="index" bindtap="geDetail" data-item="{{item}}">
+          <image class="movie-item-img" src="{{item.img}}" />
+          <text class="movie-item-text">{{item.nm}}</text>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+
+  <!-- 即将上映 -->
+  <view class="movie-box">
+    <view class="movie-title">
+      <text class="movie-title-left">即将上映</text>
+      <view class="movie-title-right" bindtap="geMovieList" data-index="1" >查看全部<text class="teshu"> > </text>
+      </view>
+    </view>
+
+    <scroll-view scroll-x="true" >
+      <view class="movie-scroll">
+        <view class="movie-item"  wx:for="{{soonList}}" wx:key="index" bindtap="geDetail" data-item="{{item}}">
+          <image class="movie-item-img" src="{{item.img}}" />
+          <text class="movie-item-text">{{item.nm}}</text>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+
+  <!-- 待映推荐 -->
+  <view class="movie-box">
+    <view class="movie-title">
+      <text class="movie-title-left">待映推荐</text>
+      <view class="movie-title-right" bindtap="geMovieList" data-index="1">查看全部<text class="teshu">  > </text>
+      </view>
+    </view>
+
+    <scroll-view scroll-x="true" >
+      <view class="movie-scroll">
+        <view class="movie-item"  wx:for="{{comingList}}" wx:key="index" bindtap="geDetail" data-item="{{item}}" >
+          <image class="movie-item-img" src="{{item.img}}" />
+          <text class="movie-item-text">{{item.nm}}</text>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+
+</block>

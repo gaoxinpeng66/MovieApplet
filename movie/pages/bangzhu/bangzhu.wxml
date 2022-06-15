@@ -1,0 +1,18 @@
+<!--pages/bangzhu/bangzhu.wxml-->
+<view class="titleImg">
+  <image src="../../images/bangzhu.png"></image>
+  <view class="font">帮助</view>
+</view>
+<view class="lineYellow"></view>
+
+<view class="content">
+  <view class="title">您可能遇到的问题1：</view>
+  <view class="font">......</view>
+
+  <view class="title">您可能遇到的问题2：</view>
+  <view class="font">......</view>
+
+  <view class="title">您可能遇到的问题3：</view>
+  <view class="font">......</view>
+</view>
+

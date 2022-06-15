@@ -1,0 +1,103 @@
+.tab-btns {
+  display: flex;
+  width: 100%;
+  height: 100rpx;
+  top: 0;
+  position: fixed;
+  background-color: #fff;
+  z-index: 999999;
+}
+
+.tab-btns-item {
+  flex: 1;
+  text-align: center;
+  line-height: 100rpx;
+  font-size: 30rpx;
+}
+.btncur {
+  color: red;
+  border-bottom: 1px solid red;
+}
+.tab-cons {
+  margin-top: 150rpx;
+}
+.tab-cons-item {
+  display: none;
+}
+
+.tab-cons-item-box {
+  width: 100%;
+  height: 220rpx;
+  display: flex;
+  flex: 1;
+  margin: 30rpx 0;
+  border-bottom: 1px solid #999;
+}
+
+
+.tab-cons-item-left {
+  margin-left: 20rpx;
+  width: 150rpx;
+  height: 200rpx;
+  border-radius: 10rpx;
+}
+
+.tab-cons-item-right {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  width: 300rpx;
+  height: 200rpx;
+  font-size: 25rpx;
+  padding-top: 15rpx;
+  margin-left: 25rpx;
+}
+
+.tab-cons-item-name {
+  margin-bottom: 15rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.namecur{
+  font-size: 28rpx;
+}
+
+.tab-cons-item-btn {
+  width: 120rpx;
+  height: 50rpx;
+  margin-top: 60rpx;
+  margin-left: 80rpx;
+}
+
+.tab-cons-item-btn > view {
+  background-color: red;
+  text-align: center;
+  line-height: 50rpx;
+  color: #fff;
+  font-size: 30rpx;
+  border-radius: 30rpx;
+}
+
+.tab-cons .current {
+  display: block;
+}
+.loading{
+  padding: 20rpx 0;
+  text-align: center; 
+  color: #999
+}
+
+.cur {
+  color: #666;
+}
+.tab-cons-item-btn .curstate{
+  background-color: rgb(60, 159, 230);
+}
+.tab-cons-item-btn .wantstate{
+  background-color: #faaf00;
+}
+.btncurrent{
+  color:#fff;
+   background:#07C160; 
+}

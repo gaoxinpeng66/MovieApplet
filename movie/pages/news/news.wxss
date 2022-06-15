@@ -1,0 +1,59 @@
+.out {
+  padding: 30rpx;
+}
+.out .box {
+  display: flex;
+  justify-content: space-between;
+  padding: 30rpx 0;
+  border-bottom: 1rpx dashed #e4e4e4;
+}
+
+.out .box .pic {
+  width: 220rpx;
+  height: 160rpx;
+}
+
+.out .box .pic .img {
+  width: 100%;
+  height: 100%;
+}
+
+.out .box .text {
+  width: 450rpx;
+  height: 160rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.out .box .title {
+  font-size: 30rpx;
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.out .box .info {
+  font-size: 26rpx;
+  color: #888;
+  display: flex;
+  justify-content: space-between;
+}
+
+.out .box .info .main {
+  flex: 1;
+}
+
+.out .box .info .current {
+  margin-right: -30rpx;
+}
+
+.loading {
+  text-align: center;
+  padding: 30rpx 0;
+  color: #999
+}

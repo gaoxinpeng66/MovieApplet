@@ -1,0 +1,84 @@
+.search-box{
+  background-color: red;
+  padding:20rpx;
+}
+.search-box .search-inp {
+  line-height: 60rpx;
+  background-color: #fff;
+  border-radius: 50rpx;
+  text-align: center;
+}
+.search-box .search-text{
+  font-size: 32rpx;
+  color:#999
+}
+.search-box .search-icon{
+  height: 20rpx;
+  vertical-align: -9rpx;
+}
+
+.swiper-box{
+  margin: 20rpx 0;
+  height: 300rpx;
+  /* border: 1px solid red; */
+}
+.swiper-box .swiper-img{
+  margin: 0 6rpx;
+  height: 100%;
+  width: 100%;
+}
+
+.movie-box {
+  height: 350rpx;
+  /* border: 1px solid red; */
+  background-color: #fff;
+  margin-bottom: 20rpx;
+}
+
+.movie-title{
+  height: 80rpx;
+  display: flex;
+  justify-content: space-between;
+  padding:0 30rpx ;
+  /* background-color: #ccc; */
+}
+.movie-title .movie-title-left{
+  color: #333;
+  font-size: 35rpx;
+  line-height: 80rpx;
+}
+.movie-title .movie-title-right{
+  color: #666;
+  line-height: 80rpx;
+  font-size:28rpx;
+}
+.movie-title .movie-title-right .teshu{
+  color: #999;
+}
+
+.movie-scroll {
+  display: flex;
+  padding:0 15rpx ;
+}
+
+.movie-item {
+  width: 160rpx; 
+  display: flex;
+  flex-direction: column;
+  margin: 0 15rpx;
+}
+
+.movie-item .movie-item-img{
+  width: 160rpx; 
+  height: 200rpx;
+  border-radius:10rpx ;
+}
+
+
+.movie-item .movie-item-text{
+ font-size: 28rpx;
+ margin: 15rpx 0;
+ overflow: hidden;
+ text-overflow: ellipsis;
+ white-space: nowrap;
+}

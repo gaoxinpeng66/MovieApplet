@@ -1,0 +1,27 @@
+<view class="out">  
+  <view class="list">    
+    <view class="row" wx:for="{{list}}" wx:key="index">
+      <navigator class="box" url="/pages/newsDetails/newsDetails?id={{item._id}}&index={{index}}">
+        <view class="pic">
+          <image class="img" mode="aspectFill" src="{{item.show}}"/>
+        </view>
+        <view class="text">
+          <view class="title">{{item.title}}</view>
+          <view class="info">
+            <view class="main">{{item.author}}</view>
+            <view class="main">{{item.createTime}}</view>
+            <view class="main current">{{item.praise}}点赞</view>
+          </view>
+        </view>
+      </navigator>
+    </view>
+  </view>
+
+  <view class="loading">
+      <view wx:if="{{loading}}">加载中...</view>
+      <view wx:else="">暂无更多</view>
+  </view>
+</view>
+
+
+
